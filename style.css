@@ -1,0 +1,132 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.card-holder {
+  height: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0d192b;
+}
+
+.card {
+  width: 345px;
+  background-color: #14253d;
+  padding: 25px;
+  border-radius: 15px;
+  -webkit-box-shadow: #06080a 0px 0px 50px;
+          box-shadow: #06080a 0px 0px 50px;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-body h2 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.card-body p {
+  color: #8eaed5;
+}
+
+.card-notation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.card-notation .eth-balance {
+  color: #20eff0;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-notation .eth-balance::before {
+  content: "";
+  display: inline-block;
+  height: 18px;
+  width: 11px;
+  margin-right: 5px;
+  background-image: url(./images/icon-ethereum.svg);
+}
+
+.card-notation .remaining-day {
+  color: #8eaed5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-notation .remaining-day::before {
+  content: "";
+  display: inline-block;
+  height: 18px;
+  width: 16px;
+  margin-right: 5px;
+  background-image: url(./images/icon-clock.svg);
+}
+
+.user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: #2f415b 1px solid;
+  padding-top: 15px;
+}
+
+.user-info img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: #fff 1px solid;
+  margin-right: 15px;
+}
+
+.user-info .user-title {
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  font-weight: 400;
+}
+
+.user-info .user-title span {
+  color: #8eaed5;
+}
+/*# sourceMappingURL=style.css.map */

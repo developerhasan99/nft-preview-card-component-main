@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.card-holder {
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+  width: 345px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: #06080a 0px 0px 50px;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-body {
+  h2 {
+    color: #fff;
+    font-size: 24px;
+  }
+  p {
+    color: #8eaed5;
+  }
+}
+
+.card-notation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  .eth-balance {
+    color: #20eff0;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+  .eth-balance::before {
+    content: "";
+    display: inline-block;
+    height: 18px;
+    width: 11px;
+    margin-right: 5px;
+    background-image: url(./images/icon-ethereum.svg);
+  }
+  .remaining-day {
+    color: #8eaed5;
+    display: flex;
+    align-items: center;
+  }
+  .remaining-day::before {
+    content: "";
+    display: inline-block;
+    height: 18px;
+    width: 16px;
+    margin-right: 5px;
+    background-image: url(./images/icon-clock.svg);
+  }
+}
+
+.user-info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-top: hsl(215, 32%, 27%) 1px solid;
+  padding-top: 15px;
+  img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: #fff 1px solid;
+    margin-right: 15px;
+  }
+
+  .user-title {
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    font-weight: 400;
+    span {
+      color: #8eaed5;
+    }
+  }
+}
